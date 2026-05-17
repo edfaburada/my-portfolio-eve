@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Supabase CDN (must be BEFORE your scripts use it) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">MyPortfolio</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#certificates" class="nav-item">Certificates</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero container" id="home">
+    <div class="hero-text">
+      <p class="tag">Hello 👋 I’m</p>
+      <h1 class="title">Evelyn</h1>
+      <h2 class="subtitle">Web Developer | IT Support | Creative Professional</h2>
+
+      <p class="desc">
+        I create clean, user-friendly websites and systems. I’m passionate about building
+        projects that solve real problems and look professional on any device.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="assets/resume.pdf" download class="btn outline">Download Resume</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+<img src="assets/eve-pic.png" alt="Profile Photo" class="profile-photo-img" />
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        A quick introduction about who I am and what I do.
+      </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Who I Am</h3>
+          <p>
+            I’m an aspiring IT professional and web developer with experience in building
+            websites, designing systems, and providing technical support. I enjoy creating
+            clean and functional designs that are easy to use.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <p>
+            Diploma In Information Technology <br />
+            School: Asian College Dumaguete City <br />
+            Year: 3rd year Diploma student (2022-2025)
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Career Goal</h3>
+          <p>
+            My goal is to grow in web development and IT support while building real-world
+            projects that help businesses and communities.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <ul class="list">
+            <li>Detail-oriented</li>
+            <li>Fast learner</li>
+            <li>Strong communication</li>
+            <li>Team player</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= PROJECTS ======= -->
+<section class="section alt" id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      Some of my works and sample projects.
+    </p>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="system">Systems</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- ===== Project Card 1 ===== -->
+      <div class="project-card" data-category="web">
+        <div class="project-thumb">
+<a href="assets/eve proto.png" target="_blank" class="thumb-link">
+  <img src="assets/eve proto.png"
+       alt="Portfolio Mockup Project"
+       class="thumb-img"
+       onerror="this.style.display='none'; if(this.nextElementSibling){ this.nextElementSibling.style.display='flex'; }">
+  <span class="thumb-fallback">Project Image</span>
+</a>
+
+        </div>
+        <h3 style="padding-top: 1rem;">Interactive Portfolio Prototype</h3>
+        <p>A prototype project design using Figma.</p>
+        <div class="tags">
+          <span>FIGMA</span>
+        </div>
+        <div class="actions">
+          <a href="https://www.figma.com/proto/7kbkEX03mfHluW35rVJijy/MY-PORTFOLIO?node-id=31-284&p=f&t=BLAyOaahIbpIO2FG-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A284&show-proto-sidebar=1" 
+   target="_blank" 
+   class="btn small primary" 
+   rel="noopener noreferrer">
+   View Prototype
+</a>
+
+          <a href="#" class="btn small outline" 
+             data-details="This project is a fully responsive <strong>Portfolio Mockup Design</strong> created using <strong>Figma</strong>.<br>
+It focuses on clean, modern, and user-friendly design principles to elegantly showcase personal work.<br><br>
+<strong>Key Features:</strong><br>
+• Fully responsive layout compatible with desktops, tablets, and mobile devices<br>
+• Organized sections for About Me, Projects, Skills, and Contact Information<br>
+• High-fidelity mockups with consistent typography and color palette<br>
+• Interactive prototype demonstrating navigation and user experience flow<br><br>
+<strong>Tools & Technologies:</strong><br>
+• Design Tool: Figma<br>
+• Techniques: Wireframing, Prototyping, UI/UX design principles<br>
+• Outcome: A visually appealing portfolio template ready for development or presentation<br><br>
+<strong>Project Summary:</strong><br>
+This project demonstrates the ability to design professional portfolio layouts, maintain visual consistency, and prioritize user experience for portfolio visitors.">
+          Details</a>
+        </div>
+      </div>
+
+      <!-- ===== Project Card 2 ===== -->
+      <div class="project-card" data-category="system">
+        <div class="project-thumb">
+          <a href="assets/EIS.png" target="_blank" class="thumb-link">
+  <img src="assets/EIS.png"
+       alt="SIL Monitoring System"
+       class="thumb-img"
+       onerror="this.style.display='none'; if(this.nextElementSibling){ this.nextElementSibling.style.display='flex'; }">
+  <span class="thumb-fallback">Project Image</span>
+</a>
+
+        </div>
+        <h3 style="padding-top: 1rem;">SIL Monitoring System</h3>
+        <p>An online system for monitoring supervised industry learning of students.</p>
+        <div class="tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn small outline" 
+             data-details="This project is a fully functional <strong>SIL Monitoring System</strong> designed to track and manage students’ supervised industry learning progress.<br>
+It provides a centralized platform for teachers and administrators to monitor tasks, attendance, and performance.<br><br>
+<strong>Key Features:</strong><br>
+• Dashboard with real-time student progress and performance metrics<br>
+• Online submission and evaluation of tasks<br>
+• Automated notifications for deadlines and updates<br>
+• User roles for students, teachers, and administrators<br><br>
+<strong>Tools & Technologies:</strong><br>
+• Backend: PHP, MySQL<br>
+• Frontend: HTML, CSS, JavaScript<br>
+• Features: Responsive web design, CRUD operations, secure login system<br><br>
+<strong>Project Summary:</strong><br>
+This project demonstrates the ability to build a web-based system with organized data management, efficient workflow tracking, and user-friendly interface for students and staff.">
+          Details</a>
+        </div>
+      </div>
+
+      <!-- ===== Project Card 3 ===== -->
+      <div class="project-card" data-category="uiux">
+        <div class="project-thumb">
+<a href="assets/coffee shop.png" target="_blank" class="thumb-link">
+  <img src="assets/coffee shop.png"
+       alt="Coffee Shop UI/UX Design"
+       class="thumb-img"
+       onerror="this.style.display='none'; if(this.nextElementSibling){ this.nextElementSibling.style.display='flex'; }">
+  <span class="thumb-fallback">Project Image</span>
+</a>
+
+        </div>
+        <h3 style="padding-top: 1rem;">Coffee Shop UI/UX Design</h3>
+        <p>A clean and modern UI/UX design for a coffee shop online platform.</p>
+        <div class="tags">
+          <span>FIGMA</span>
+          <span>UI/UX</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn small outline" 
+             data-details="This project is a <strong>Coffee Shop UI/UX Design</strong> focused on creating a modern, intuitive online ordering experience for a coffee shop.<br>
+The design emphasizes usability, accessibility, and aesthetic appeal to engage users.<br><br>
+<strong>Key Features:</strong><br>
+• User-friendly interface with clear navigation<br>
+• Product catalog with images, descriptions, and pricing<br>
+• Interactive prototype for browsing, ordering, and checkout<br>
+• Consistent branding, color palette, and typography<br><br>
+<strong>Tools & Technologies:</strong><br>
+• Design Tool: Figma<br>
+• Techniques: Wireframing, Prototyping, UI/UX principles<br>
+• Outcome: Fully visualized UI/UX ready for handoff to development<br><br>
+<strong>Project Summary:</strong><br>
+This project highlights skills in UI/UX design, focusing on enhancing user experience, visual design consistency, and interactive flow for an online coffee shop platform.">
+          Details</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Project Details Modal ===== -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle">Project Title</h3>
+    <p id="modalDescription">Project description goes here...</p>
+    <div id="modalExtraContent"></div>
+  </div>
+</div>
+
+<!-- ===== Modal CSS ===== -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background-color: var(--white);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: var(--radius);
+  width: 80%;
+  max-width: 600px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.modal-content .close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+</style>
+
+<!-- ===== Modal JS ===== -->
+<script>
+const modal = document.getElementById('projectModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalDescription = document.getElementById('modalDescription');
+const modalExtraContent = document.getElementById('modalExtraContent');
+const closeBtn = document.querySelector('.modal .close');
+
+document.querySelectorAll('.project-card .btn.outline').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = btn.closest('.project-card');
+    modalTitle.textContent = card.querySelector('h3').textContent;
+    modalDescription.textContent = card.querySelector('p').textContent;
+    modalExtraContent.innerHTML = btn.dataset.details;
+    modal.style.display = 'block';
+  });
+});
+
+closeBtn.addEventListener('click', () => modal.style.display = 'none');
+window.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
+</script>
+
+
+
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">
+        Technical and soft skills that I use in my work.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>HTML / CSS</span>
+            <div class="bar"><div class="fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+          </div>
+          <div class="skill">
+            <span>WordPress</span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill">
+            <span>PHP / MySQL</span>
+            <div class="bar"><div class="fill" style="width: 65%"></div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <div class="badges">
+            <span class="badge">Communication</span>
+            <span class="badge">Teamwork</span>
+            <span class="badge">Problem-solving</span>
+            <span class="badge">Time Management</span>
+            <span class="badge">Adaptability</span>
+            <span class="badge">Customer Service</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CERTIFICATES ======= -->
+  <section class="section alt" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certificates</h2>
+      <p class="section-subtitle">
+        Certifications and achievements I’ve earned.
+      </p>
+
+<div class="cert-grid">
+<div class="cert-card">
+  <div class="cert-thumb">
+    <a href="assets/CERTIFICATION of Front End Development Libraries_FABURADA.png" target="_blank">
+      <img src="assets/CERTIFICATION of Front End Development Libraries_FABURADA.png" alt="Certificate 1" />
+    </a>
+  </div>
+  <h3>CERTIFICATION of Front End Development Libraries</h3>
+  <p>Date: June 9, 2025</p>
+</div>
+
+<div class="cert-card">
+  <div class="cert-thumb">
+    <a href="assets/CERTIFICATION of JavaScript Algorithms and Data Structures_FABURADA.png" target="_blank">
+      <img src="assets/CERTIFICATION of JavaScript Algorithms and Data Structures_FABURADA.png" alt="Certificate 2" />
+    </a>
+  </div>
+  <h3>CERTIFICATION of JavaScript Algorithms and Data Structures</h3>
+  <p>Date: June 14, 2025</p>
+</div>
+
+
+<div class="cert-card">
+  <div class="cert-thumb">
+    <a href="assets/CERTIFICATION of Responsive Web Design_FABURADA.png" target="_blank">
+      <img src="assets/CERTIFICATION of Responsive Web Design_FABURADA.png" alt="Certificate 3" />
+    </a>
+  </div>
+  <h3>CERTIFICATION of Responsive Web Design</h3>
+  <p>Date: April 12, 2025</p>
+</div>
+</div>
+
+    </div>
+  </section>
+
+<!-- ======= CONTACT ======= -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">
+      Let’s connect! You can message me using the form below.
+    </p>
+
+    <div class="contact-grid">
+
+ <form id="contactForm" class="contact-form">
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn primary full">Send Message</button>
+  <p id="formStatus" style="margin-top:10px; font-weight:600;"></p>
+</form>
+
+<script>
+  // 🔑 Replace with your actual Supabase credentials
+  const supabaseUrl = 'YOUR_SUPABASE_URL';
+  const supabaseKey = 'YOUR_ANON_PUBLIC_KEY';
+
+  const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // Get values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Basic validation
+    if (!name || !email || !message) {
+      status.textContent = '❌ Please fill in all fields.';
+      status.style.color = 'red';
+      return;
+    }
+
+    status.textContent = '⏳ Sending...';
+    status.style.color = 'gray';
+
+    // Insert into Supabase
+    const { error } = await supabase
+      .from('messages')
+      .insert([{ name, email, message }]);
+
+    if (error) {
+      console.error(error);
+      status.textContent = '❌ Failed to send message.';
+      status.style.color = 'red';
+    } else {
+      status.textContent = '✅ Message sent successfully!';
+      status.style.color = 'green';
+      form.reset();
+    }
+  });
+</script>
+
+        <div class="contact-info card">
+          <h3>My Details</h3>
+          <p><strong>Email:</strong> evedagle07@email.com</p>
+          <p><strong>Location:</strong> Dumaguete City, Philippines</p>
+
+<div class="socials">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">Gmail</a>
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+
+
+<!-- Map Section -->
+<div class="map-placeholder">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125995.30618089408!2d123.282437!3d9.301928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab6edb788ea0f7%3A0xd79dfe9b5bfc37fb!2sDumaguete%20City%2C%20Negros%20Oriental!5e0!3m2!1sen!2sph!4v1770868477085!5m2!1sen!2sph" 
+    width="100%" 
+    height="100%" 
+    style="border:0; border-radius: var(--radius);" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="footer-flex" style="display: flex; justify-content: center; align-items: center;">
+    <p>© <span id="year"></span> Evelyn. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
