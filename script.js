@@ -8,7 +8,7 @@ const form = document.getElementById("contactForm");
 const status = document.getElementById("formStatus");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+  e.preventDefault(); 
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
